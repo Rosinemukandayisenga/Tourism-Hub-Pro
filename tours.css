@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.header img{
+    width: 40px;
+    height: 40px;
+}
+.header a{
+    color: white;
+    background-color: #82b440;
+    border: 3px solid #6f9a37;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: 500;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 40px 10px 30px ;
+    background-color: #000a00;
+   
+}
+.pic img{
+    height: 288px;
+   width: 100%;
+   object-fit: cover;
+}
+.trans{
+    background-color: #000a00;
+    position: absolute;
+    height: 288px;
+    width: 100%;
+    opacity: 0.5;
+    margin-top: -293px;
+}
+.tour{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: -182px;
+    font-weight: 790;
+    font-size: 50px;
+    margin-left: 690px;
+}
+.card1 img{
+    width: 290px;
+    height: 200px;
+    padding-bottom: 30px;
+}
+.card{
+    display: flex;margin-top: -4px;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card a{
+    color: white;
+    background-color: #82b440;
+    border: 3px solid #6f9a37;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: 500;
+
+}
+.card1{
+    width: 27%;
+ 
+    height: 450px;
+    background-color: #000a00;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.crcl1{
+    background-color: #000a00;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 14px;
+    margin-left: 695px;
+}
+
+.crcl2{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #000a00;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 14px;
+    margin-left: 780px;
+    border: 1px solid #000a00;
+    margin-top: -40px;
+
+}
+h2{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
