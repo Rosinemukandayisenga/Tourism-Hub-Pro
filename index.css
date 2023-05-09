@@ -5,6 +5,7 @@
 }
 .container{
     position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header img{
     width: 40px;
@@ -20,6 +21,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
 }
+.header a:hover{
+    color: #82b440;
+    background-color: #000a00;
+    border: 3px solid #6f9a37;
+  }
 .header{
     display: flex;
     justify-content: space-between;
@@ -38,57 +44,80 @@
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
-    animation: change 10s infinite ease-in-out;
+    animation:change 30s infinite ease-in-out;
 }
 @keyframes change{
     0%{
         background-image: url(./pic/pexels-photo-208693.jpeg);
     }
-    20%{
+    10%{
         background-image: url(./pic/pexels-photo-1687122.jpeg);
     }
+    20%{
+        background-image: url(./pic/pexels-photo-13813443.jpeg);
+    }
+    30%{
+        background-image: url(./pic/pexels-photo-228095.jpeg);
+    }
     40%{
+        background-image: url(./pic/pexels-photo-4669523.jpeg);
+    }
+    50%{
         background-image: url(./pic/pexels-photo-6324237.jpeg);
     }
     60%{
-        background-image: url(./pic/pexels-photo-228095.jpeg);
+        background-image: url(./pic/pexels-photo-5383883.jpeg);
+    }
+    70%{
+        background-image: url(./pic/pexels-photo-2846234.jpeg);
     }
     80%{
-        background-image: url(./pic/pexels-photo-4669523.jpeg);
+        background-image: url(./pic/pexels-photo-6324261.jpeg);
+    }
+    90%{
+        background-image: url(./pic/rwanda-gorilla-tours.jpg);
     }
     100%{
-        background-image: url(./pic/pexels-photo-2161449.jpeg);
-    }
-    
-
+        background-image: url(./pic/pexels-photo-9543350.jpeg);
+    } 
 }
 .contain{
     position: absolute;
-    top: 40%;
-    left: 70px;
+    top: 180px;
+    left: 30px;
+    color: white;
+    text-align: center;
+    z-index: 1;
     font-size: 30px;
 }
+.contain h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6f9a37;
+}
+
 .contain button{
     color: white;
     background-color: #82b440;
     border: 2px solid #6f9a37;
     text-decoration: none;
-    padding: 7px 20px;
+    padding: 7px 40px;
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;  
+    font-size: 17px;
 }
 .contain button:hover{
-    background-color: white;
-    color: #000a00;
-    border: 3px solid whitesmoke;
+  color: #82b440;
+  background-color: #000a00;
+  border: 3px solid #6f9a37;
 }
 .opacity{
     width:100%;
     height: 90vh;
     position: absolute;
+    top: 0px;
     background: black;
-    opacity: 0.5;
+    opacity: 0.8;
     
 }
 nav{
@@ -96,14 +125,16 @@ nav{
     justify-content: space-between;
     position: absolute;
     padding-top: 10px;
+    top: 5px;
     padding-left: 30px;
     font-weight: bolder;
 }
 nav h1{
     font-size: 35px;
+    color: white;
 }
 nav ul{
-    margin-left: 280px;
+    margin-left: 360px;
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -133,17 +164,49 @@ nav ul li a:hover{
     height: 100px;
     margin-top:-110px ;
     margin-left: 70px;
+   
 }
-.fill input{
+.fill #when{
+    margin-top: 30px;
     position: absolute;
-    width: 100px;
-    margin-left: 150px;
+    width: 200px;
+    margin-left: 400px;
     height: 40px;
+    border-radius: 10px;
 }
-.fill select{
-    width: 100px;
-   position: absolute;
+.fill #where{
+    margin-top: 30px;
+    width: 200px;
+    border: none;
+    outline: none;
+    margin-left: 100px;
+    position: absolute;
     height: 40px;
+    border-radius: 10px;
+}
+.fill #type {
+    margin-top: 30px;
+    width: 200px;
+    position: absolute;
+    margin-left: 700px;
+    height: 40px; 
+    border-radius: 10px;
+}
+.fill #button {
+    margin-top: 30px;
+    width: 120px;
+    position: absolute;
+    font-size: 17px;
+    margin-left: 1000px;
+    height: 40px; 
+    color: white;
+    background-color: #82b440;
+    border: 2px solid #6f9a37;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;  
 }
 .fills{
     width: 1200px;
@@ -152,3 +215,122 @@ nav ul li a:hover{
     background-color: #6f9a37;
     opacity: 0.7;
 }
+footer .wave {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background-size: 1000px 100px;
+background:url(./pic/WhatsApp\ Image\ 2023-05-09\ at\ 12.53.53.jpeg);
+}
+footer .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+footer .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+footer .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+ footer .wave.wave4{
+    animation: animate2 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: 5s;
+    bottom: 20px;
+}
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+   
+}
+
+ @keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }} 
+   
+.about1{
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+   
+}
+.about1 p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.about1 a{
+    
+    color: white;
+    background-color: #82b440;
+    border: 2px solid #6f9a37;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.about a:hover{
+    color: #82b440;
+  background-color: #000a00;
+  border: 3px solid #6f9a37;  
+}
+.about{
+    height: 300px;
+}
+.service{
+    background-color: #000a00;
+    height: 700px;
+}
+.card1 img{
+    width: 290px;
+    height: 200px;
+    padding-bottom: 30px;
+}
+.card{
+    display: flex;margin-top: -4px;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: #000a00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card1{
+    width: 27%;
+    height: 450px;
+    background-color: #000a00;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+    border:  3px solid #82b440;
+}
+.service .card1 h1{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.service h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+       
