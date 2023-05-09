@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/green\ water.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    display: flex;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: .6;
+    position: absolute;
+    z-index: 1;
+}
+.content{
+    width: 50vw;
+    height: 100vh;
+    background:#6fa937;
+    margin-left: 50%;
+    z-index: 2;
+    opacity: .6;
+}
+.content input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-top: 60px;
+    border: none;
+    padding-left: 30px;
+    z-index: 3;
+}
+input ::placeholder{
+    text-align: center;
+    
+}
+.image i{
+    font-size: 60px;
+    color: white;
+    float: left;
+}
+#btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 290px;
+    margin-top: 40px;
+    border: none;
+}
+h1{
+    font-family: century Gothic;
+    font-size: 18px;
+    margin-left: 220px;
+    margin-top: 30px;
+    color: white;
+   z-index: 4;
+}

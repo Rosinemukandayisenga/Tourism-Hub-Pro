@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    width: 30%;
+    height: 100vh;
+    background: #6f9a37;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    background-image: url(./image/bird3.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.opacity{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: .6;
+}
+
+.left i{
+    font-size: 50px;
+    color: white;
+}
+.left #left{
+    width: 150px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-family: century Gothic;
+
+}
+/* .left #left i{
+    font-size: 40px;
+} */

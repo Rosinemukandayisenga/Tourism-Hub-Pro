@@ -12,34 +12,37 @@
     <div class="opacity"></div>
     <div class="icon"><i class="ion-android-menu"></i></div>
     <div class="container">
-    <div class="content">
-     <form id="form" action="/">
-     <h1>Make Registration Here</h1>
-     <div class="input-control">
-        <input type="text" id="firstname"name="firstname" placeholder="Firstname" required>
-        <div class="error"></div>
+    <div class="header">
+      <h1>Make Registration Here</h1>
      </div>
-     <div class="input-control">
-        <input type="text" id="lastname"name="lastname" placeholder="Lastname">
-        <div class="error"></div>
-     </div>
-     <div class="input-control">
-        <input type="email" id="email"name="email" placeholder="Email address">
-        <div class="error"></div>
-     </div>
-     <div class="input-control">
-        <input type="password" id="password"name="password" placeholder="Password">
-        <div class="error"></div>
-     </div>
-     <div class="input-control">
-        <input type="password" id="password2="firstname="password" placeholder="Confirm password">
-        <div class="error"></div>
-     </div>
+     <form class="form" id="form" onsubmit="signup(event)">
+      <div class="form-control">
+         <label for="userName"name="firstname" id="userName">Firstname</label>
+         <input type="text"name="userName">
+      </div>
+      <small>error message</small>
+      <div class="form-control">
+         <label for="lastname"name="lastname" id="txtlastname">Lastname</label>
+         <input type="text"name="lastname">
+      </div>
+      <small>error message</small>
+      <div class="form-control">
+         <label for="email"name="email" id="txtemail">Email address</label>
+         <input type="email"name="email">
+      </div>
+      <small>error message</small>
+      <div class="form-control">
+         <label for="password"name="password" id="txtpswd">password</label>
+         <input type="password"name="password">
+        </div> 
+        <small>error message</small>
+      <div class="form-control">
+         <label for="password2"name="password2" id="confpswd">Confirm password</label>
+         <input type="password2"name="password2">
+         </div>
+         <small>error message</small>
      </form>
-
-  </div> 
   <button type="submit"id="btn"> Register Now</button>
-    </div>
- <script src="./user.js"></script>   
+ <script src="/user.js"></script>   
 </body>
 </html>

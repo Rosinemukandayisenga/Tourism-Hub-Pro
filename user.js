@@ -1,73 +1,60 @@
-let form=document.getElementById("form")
-let first=document.getElementById("firstname")
-let last=document.getElementById("lastname")
-let email=document.getElementById("email")
-let password=document.getElementById("password")
-let pass=document.getElementById("password2")
-form.addEventListener("submit",e=>{
-    e.preventDefault();
-    validateInputs();
 
+let userName=document.getElementById("txtuserName")
+let last=document.getElementById("txtlastname")
+let email=document.getElementById("txtemail")
+let pswd=document.getElementById("txtpswd")
+let confpswd=document.getElementById("txtconfpswd")
+let form=document.querySelector("form")
+
+function validatesInput(){
+if(userName.value.trim()===''){
+    // let parent=userName.parentElement;
+    // let messageEl=parent.querySelector("small")
+    // messageEl.innerText="username cant be null"
+onerror(userName,'usernmae cant be null ')
+}
+else {
+onSuccess(userName)
+}
+}
+document.querySelector("button")
+.addEventListener("click",(event)=>{
+    event.preventDefault;
+    validatesInput();
 })
-const setSuccess=(element,message)=>{
-    const inputControl=element.parentElement;
-    const errorDisplay=inputControl.querySelector('.error-message')
-    errorDisplay.innerHTML=message
+function onSuccess(input){
+   let parent=userName.parentElement;
+    let messageEl=parent.querySelector("small")
+    messageEl.innerText="username cant be null"
+    messageEl.style.visibility="hidden"  
+    messageEl.innerText="" 
+    parent.classList.remove("error")
+    parent.classList.add("success")
 }
-const validateInputs=()=>{
-    const firstValue=first.value.trim();
-    const lastValue=last.value.trim();
-    const passwordValue=password.value.trim();
-    const password2Value=password2.value.trim();
-    const emailValue=email.value.trim();
-}
-const re=isValidEmail=email=>{
-
-}
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  }
-  
-if(firstValue===''){
-    setError(first,'firstname is required')
-    // inputControl.classlist.add("error")
-    // inputControl.classlist.remove("success")
-}
-else{
-    setSuccess(firstValue)
-}
-if(lastValue===''){
-    setError(last,'lastname is required')
-}
-setSuccess(lastValue)
-
-if(password===''){
-    setError(password,'password is required')
-}
-else if(passwordValue.length<8){
-    
-    setError(password,'password must be greater than 8 character')
-}
-else{
-    setSuccess(password)
+function onerror(input){
+    let parent=userName.parentElement;
+    let messageEl=parent.querySelector("small")
+    messageEl.style.visibility="visible"
+    messageEl.innerText=message;
+    parent.classList.add("error")
+    parent.classList.remove("success")
 }
 
-if(password2Value===''){
-    setError(password2,'confirm password is required')
+let register=[];
+document.getElementById("form").value;
+document.addEventListener("submit",function(event){
+    event.preventDefault();
+    const userName=document.getElementById("userName").value;
+    const txtlastname=document.getElementById("txtlastname").value;
+    const txtemail=document.getElementById("txtemail").value;
+    const txtpswd=document.getElementById("txtpswd").value;
+    const existingUser=register.find((u) => u.txtemail===txtemail)
+    }
+)
+if (existingUser){
+    alert("user already exists");
+    location.href="login.html";
+    return;
 }
-else if(passwordValue==password2Value){
-    setError(password2,'password doesnt match')
-}
-setSuccess(password2)
-
-if(emailValue===''){
-    setError(email,'Email is require')
-}
-else if(!isValidEmail(emailValue)){
-  setSuccess(email,'provide valid email')
-}
-else{
-    setSuccess(email)
-}
-
+register.push(userName,txtlastname,txtpswd,txtpswd)
+localStorage.setItem(register.JSON.stringify(register))

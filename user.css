@@ -29,56 +29,62 @@ body{
 }
 .container{
     width: 500px;
-    height: 500px;
+    height: 650px;
     margin: auto;
-}
-.content{
-    width: 320px;
-    height: 400px;
-    background:#6f9a37;
-    margin-left:90px;
-    z-index: 1;
+    background: #6af937;
     border-radius: 10px;
-    margin-top: 40px;
+    overflow: hidden;
 }
-input{
-    height: 40px;
-    width: 250px;
+.header{
+    padding:10px 20px;
+}
+.form{
+    padding: 20px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.form-control .success input{
+    border-color: 2px solid darkgreen;
+}
+.form-control.error input{
+    border-color: 2px solid red;
+}
+.form-control input{
+    display: block;
+    height:30px;
+    width: 300px;
     border-radius: 5px;
-    border: none;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 20px;
+    border: 2px solid #6af937;
 }
-form h1{
-    color: white;
-    font-size: 18px;
-    text-align: center;
+.form-control small{
+    position: absolute;
+    padding: 3px;
+    visibility: hidden;
 }
-#btn{
-    background: #82b440;
-    border:2px solid #6f9a37;
-    padding: 10px 20px;
-    color: white;
-    margin-top: 30px;
-    margin-left: 180px;
-    border-radius: 5px;
+button{
+    width: 120px;
+    height: 30px;
+    background: #025f13;
+    color:white;
+    font-family: 'poppins';
+    margin-left: 150px;
+    border: 2px solid #6f9a37;
 }
-.input-control{
-    display: flex;
-    flex-direction: column;
+.form-control.success input{
+    border-color: white;
 }
-.input-control input:focus{
-    outline: 0;
-}
-.input-control.success input{
-    border-color: darkgreen;
-}
-.input-control.error input{
+.form-control.error input{
     border-color: red;
 }
-.input-control.error{
-    color: red;
-    font-size: 9px;
-    height: 13px;
-}
+
+
+
+
+
