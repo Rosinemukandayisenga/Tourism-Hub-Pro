@@ -55,11 +55,13 @@
     padding-bottom: 30px;
 }
 .card{
-    display: flex;margin-top: -4px;
+    display: flex; 
+    margin-top: -4px;
     justify-content: space-between;
     padding: 50px 80px;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 .card a{
     color: white;
@@ -111,16 +113,32 @@
 h2{
     padding: 10px;
 }
+.hiddendiv{
+    display: flex;
+    margin-top: -4px;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    /* position: absolute; */
+    display: none;
+   
 
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.carda{
+    width: 100%;
+ 
+    height: 450px;
+    background-color: #000a00;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+ .menubar a{
+    /* margin-top: -22px; */
+    position: absolute;
+ 
+} 
