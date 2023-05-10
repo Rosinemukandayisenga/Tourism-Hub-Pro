@@ -8,11 +8,16 @@
     height: 100vh;
     display: flex;
 }
-.left{
+.left1{
     width: 30%;
     height: 100vh;
     background: #6f9a37;
 }
+.left1 i{
+    font-size: 30px;
+    color: white;
+}
+
 .right{
     width: 70%;
     height: 100%;
@@ -27,19 +32,66 @@
     background: black;
     opacity: .6;
 }
-
-.left i{
-    font-size: 50px;
-    color: white;
-}
-.left #left{
+ #left2{
     width: 150px;
     height: 40px;
     background: black;
     color: white;
     font-family: century Gothic;
+    /* padding: 20px; */
+    font-size: 13px;
+    padding-bottom: 30px;
 
 }
-/* .left #left i{
-    font-size: 40px;
-} */
+#word{
+    color: black;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: century Gothic;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+#first{
+    width: 170px;
+    height: 40px;
+    background: black;
+    color:white;
+    font-family:century Gothic;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#second{
+    width: 170px;
+    height: 40px;
+    background: black;
+    color:white;
+    font-family:century Gothic;
+    margin-left: 40px;
+    border-radius: 10px; 
+    margin-top: 10px; 
+}
+#third{
+    width: 170px;
+    height: 40px;
+    background: black;
+    color:white;
+    font-family:century Gothic;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#fourth{
+    width: 170px;
+    height: 40px;
+    background: black;
+    color:white;
+    font-family:century Gothic;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.input {
+    margin-top: 50px;
+}
